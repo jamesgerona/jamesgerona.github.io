@@ -1,0 +1,305 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #010101, #4e5554, #273433);
+}
+
+.logo {
+    padding: 0 2rem;
+}
+
+.logo .logo-heading {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    padding: 0 2rem;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list .menu-list-items {
+    padding: 1rem;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 856px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu .menu-list {
+        display: none; /* Hide menu on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        background: #273433;
+        width: 100%;
+    }
+
+    .menu.active .menu-list {
+        display: flex; /* Show menu when active */
+    }
+
+    .menu-list .menu-list-items {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+/* Main Hero Section Styles */
+.hero {
+    background-image: url(https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero .intro {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero .intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, #363D73, #2794B3);
+    padding: 2rem;
+}
+
+.about .about-text {
+    color: #030202;
+    padding: 2rem;
+}
+
+.about .about-image img {
+    max-width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    margin: 4.8rem 0;
+    padding: 0 2rem;
+}
+
+.port-card {
+    padding: 0;
+    border: 2px solid #000;
+}
+
+.port-card .image {
+    width: 100%;
+}
+
+.port-card .image img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* Services Section Styles */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.8rem 0;
+    padding: 0 2rem;
+}
+
+.my-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.my-row .my-col {
+    text-align: center;
+    width: 90%;
+}
+
+.my-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C);
+    padding: 1rem;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #363D73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 0 2rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.contact-form-container, .contact-details {
+    width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #070606;
+    padding: 2rem;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+    border-radius: 50%;
+    background-color: #53C8B6;
+}
+
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Utility Classes */
+.greet-heading {
+    font-size: 1.3rem;
+    color: #ccc;
+}
+
+.my-heading {
+    font-size: 2.5rem;
+    color: #ccc;
+}
+
+.sub-heading {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.links {
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.common-btn {
+    background-color: #35A99C;
+    color: #fff;
+    border: 2px solid #35A99C;
+    transition: all 0.25s;
+}
+
+.common-btn:hover {
+    background-color: #fff;
+    color: #35A99C;
+}
+
+.ghost-btn {
+    background-color: #fff;
+    color: #35A99C;
+}
+
+.ghost-btn:hover {
+    background-color: #35A99C;
+    color: #fff;
+}
+
+/* Responsive Font Sizes */
+@media screen and (max-width: 856px) {
+    .greet-heading { font-size: 1rem; }
+    .my-heading { font-size: 2rem; }
+    .sub-heading { font-size: 0.7rem; }
+}
+
+/* Ensure full responsiveness on all screens */
+@media screen and (max-width: 600px) {
+    .navbar, .hero, .about, .portfolio, .services, .contact, .footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about .about-text, .about .about-image img {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .my-row .my-col {
+        width: 100%;
+    }
+
+    .footer-menu .footer-menu-list {
+        flex-direction: column;
+    }
+}
